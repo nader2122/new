@@ -1,0 +1,484 @@
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git init
+Initialized empty Git repository in C:/Users/NADER/Desktop/git and gitHub/.git/
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git add .
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git config --global user.name "nader2122"
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git config --global user.email "nadertrabelssi@gmail.com"
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git remote add https://github.com/nader2122/new.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git remote add origin https://github.com/nader2122/new.git
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ touch third.txt
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git add third.txt
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git commit -m"third.txt"
+[master (root-commit) 24b9b31] third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ touch fourth.txt
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git add fourth.txt
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git commit -m "add fourth.txt"
+[master decfcf8] add fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git rm third.txt
+rm 'third.txt'
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git add .
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git commit -m "remove third.txt"
+[master aa87e47] remove third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git branch
+* master
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 631 bytes | 315.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nader2122/new.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git pull
+Already up to date.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git push text.txt
+fatal: invalid gitfile format: text.txt
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git merge
+Already up to date.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git add .
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git commit -m "add text.txt"
+[master 6d84144] add text.txt
+ 1 file changed, 127 insertions(+)
+ create mode 100644 text.txt
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git add .
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   text.txt
+
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git commit -m "text empty"
+[master 3141fae] text empty
+ 1 file changed, 127 deletions(-)
+ rewrite text.txt (100%)
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git branch
+* master
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git checkout -b core.page
+Switched to a new branch 'core.page'
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git status
+On branch core.page
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git merge master
+Already up to date.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git push origin core.page
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.37 KiB | 1.37 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'core.page' on GitHub by visiting:
+remote:      https://github.com/nader2122/new/pull/new/core.page
+remote:
+To https://github.com/nader2122/new.git
+ * [new branch]      core.page -> core.page
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> core.page
+
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git branch
+* core.page
+  master
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git branch --set-upstream-to=origin/<branch> core.page
+bash: branch: No such file or directory
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git merge master
+Already up to date.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 2.02 KiB | 12.00 KiB/s, done.
+From https://github.com/nader2122/new
+   3141fae..8723d62  core.page  -> origin/core.page
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> core.page
+
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git pull master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git status
+On branch core.page
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git fetch
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git clone https://github.com/nader2122/new.git
+Cloning into 'new'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 15 (delta 1), reused 11 (delta 0), pack-reused 0
+Receiving objects: 100% (15/15), done.
+Resolving deltas: 100% (1/1), done.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git add .
+warning: adding embedded git repository: new
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> new
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached new
+hint:
+hint: See "git help submodule" for more information.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git commit -m "updating"
+[core.page 5388131] updating
+ 1 file changed, 1 insertion(+)
+ create mode 160000 new
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git status
+On branch core.page
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git barch
+git: 'barch' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git branch
+* core.page
+  master
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git master
+git: 'master' is not a git command. See 'git --help'.
+
+The most similar command is
+        restore
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git branch master
+fatal: A branch named 'master' already exists.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git checkout master
+warning: unable to rmdir 'new': Directory not empty
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git branch master
+fatal: A branch named 'master' already exists.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git merge core.page
+Updating 3141fae..5388131
+Fast-forward
+ new | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 160000 new
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git add .
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git commit -m "update"
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git pull
+Already up to date.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git merge core.page
+Already up to date.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git branch core.page
+fatal: A branch named 'core.page' already exists.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git checkout branch
+error: pathspec 'branch' did not match any file(s) known to git
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$ git checkout core.page
+Switched to branch 'core.page'
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git status
+On branch core.page
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git merge master
+Already up to date.
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git add .
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git commit "new apdate"
+error: pathspec 'new apdate' did not match any file(s) known to git
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git commit -m "new update"
+On branch core.page
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git status
+On branch core.page
+nothing to commit, working tree clean
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git log
+commit 5388131d187701b06b74651745f22a8f620258bb (HEAD -> core.page, master)
+Author: nader2122 <nadertrabelssi@gmail.com>
+Date:   Wed Sep 29 15:31:30 2021 +0100
+
+    updating
+
+commit 3141faea9e339fdd69c031408bdb8b0460a0eaac
+Author: nader2122 <nadertrabelssi@gmail.com>
+Date:   Wed Sep 29 15:18:55 2021 +0100
+
+    text empty
+
+commit 6d8414428fbd6e4c34da2200a9ec2bff03594973
+Author: nader2122 <nadertrabelssi@gmail.com>
+Date:   Wed Sep 29 14:53:30 2021 +0100
+
+    add text.txt
+
+commit aa87e470f6cd89ab891e7ba112d68c52439785e0 (origin/master)
+Author: nader2122 <nadertrabelssi@gmail.com>
+Date:   Wed Sep 29 14:46:27 2021 +0100
+
+    remove third.txt
+
+commit decfcf8d27a806fc657db7701d321f4be0c248f0
+Author: nader2122 <nadertrabelssi@gmail.com>
+Date:   Wed Sep 29 14:44:26 2021 +0100
+
+    add fourth.txt
+
+commit 24b9b318ca5b91c331da9ff84d571ae1499892df
+Author: nader2122 <nadertrabelssi@gmail.com>
+Date:   Wed Sep 29 14:42:10 2021 +0100
+
+
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (core.page)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
+$
