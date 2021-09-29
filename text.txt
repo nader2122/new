@@ -481,4 +481,5 @@ Your branch is ahead of 'origin/master' by 3 commits.
   (use "git push" to publish your local commits)
 
 NADER@DESKTOP-5KJD6C6 MINGW64 ~/Desktop/git and gitHub (master)
-$
+$ git push origin mater
+
